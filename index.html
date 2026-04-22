@@ -2,80 +2,39 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <title>Quiz Video</title>
-  <style>
-    body {
-      font-family: Arial;
-      max-width: 800px;
-      margin: 40px auto;
-      text-align: center;
-    }
-    iframe {
-      width: 100%;
-      height: 400px;
-    }
-    .option {
-      display: block;
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-    }
-    .correct { background: #c8f7c5; }
-    .wrong { background: #f7c5c5; }
-  </style>
+  <title>Title page</title>
+<link rel="stylesheet" href="style.css">
+<script src="navbar.js"></script>
+ <style>
+  body{
+    max-width: 50%;
+  }
+  .navbar a{
+    text-align: center;
+    margin: 0;
+  }
+ </style> 
 </head>
+
 <body>
 
-  <h1>Interaktywny poradnik</h1>
-
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a href="knowledgeBase.html">📘 Wiedza podstawowa</a>
+    <a href="testC.html">🧠 Test na cwela </a>
+  </div>
+ <h1>-----</h1>
   <iframe id="video"
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    src="https://www.youtube.com/embed/TPA9AjfGCU8"
     frameborder="0"
     allowfullscreen>
   </iframe>
 
-  <h2 id="question"></h2>
+  <h1>-----</h1>
 
-  <div id="options"></div>
-
-  <p id="feedback"></p>
-
-  <script>
-    const data = {
-      question: "Co powinieneś zrobić w tej sytuacji?",
-      options: [
-        { text: "Opcja A", correct: false },
-        { text: "Opcja B", correct: true },
-        { text: "Opcja C", correct: false }
-      ],
-      explanation: "Opcja B jest poprawna, bo daje najlepszy efekt."
-    };
-
-    const questionEl = document.getElementById("question");
-    const optionsEl = document.getElementById("options");
-    const feedbackEl = document.getElementById("feedback");
-
-    questionEl.textContent = data.question;
-
-    data.options.forEach(opt => {
-      const btn = document.createElement("div");
-      btn.className = "option";
-      btn.textContent = opt.text;
-
-      btn.onclick = () => {
-        if (opt.correct) {
-          btn.classList.add("correct");
-          feedbackEl.textContent = "✔ " + data.explanation;
-        } else {
-          btn.classList.add("wrong");
-          feedbackEl.textContent = "✖ Spróbuj ponownie";
-        }
-      };
-
-      optionsEl.appendChild(btn);
-    });
-  </script>
+ <script src="navbar.js"></script>
+<script src="knowledgeBase.js"></script>
+  
 
 </body>
 </html>
