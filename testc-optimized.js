@@ -335,7 +335,7 @@ function calculateCategoryStats() {
 function returnToStart() {
   const wrapper = document.getElementById("quiz-box");
   
-  updateProgressText("Quiz taktyczny");
+  updateProgressText("Pytania tak tak");
   wrapper.innerHTML = Templates.startScreen();
   
   // Ponowne podpięcie event listenera
