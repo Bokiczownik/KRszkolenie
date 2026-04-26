@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TestC - Quiz taktyczny do oceny umiejętności podejmowania decyzji">
+  <title>TestC </title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style-optimized.css">
+
+  <!-- Scripts -->
+  <script src="questions.js" defer></script>
+  <script src="templates.js" defer></script>
+  <script src="navbar.js" defer></script>
+  <script src="testc-optimized.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Container -->
+  <div id="navbar-container"></div>
+
+  <!-- Main Quiz Container -->
+  <div class="quiz-wrapper">
+
+    <!-- Quiz Header -->
+    <div class="quiz-header">
+      <h1>ogólne</h1>
+      <div id="progress">tu ile pytan</div>
+    </div>
+
+    <!-- Quiz Content Box -->
+    <div class="quiz-box" id="quiz-box">
+
+      <!-- Start Screen -->
+      <div id="start-screen">
+        <h2>Kartkóweczka ogólna</h2>
+        <p class="quiz-description">
+          Quiz losuje pytania ogólne z bazy i ocenia Twoje decyzje w punktacji +5/+1/-1/-5.
+        </p>
+        <button id="start-btn" class="main-btn">
+          Rozpocznij Quiz
+        </button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz-screen" style="display:none;">
+        <div id="media-container"></div>
+        <h2 id="question-text">Ładowanie pytania...</h2>
+        <div id="answers-container"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

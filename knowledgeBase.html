@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Baza wiedzy</title>
+
+  <link rel="stylesheet" href="style-optimized.css">
+
+
+
+</head>
+
+<body>
+
+<div class="kb-layout">
+
+  <div class="kb-menu">
+
+    <!-- PODSTAWY -->
+    <div class="kb-item" onclick="toggle(this)">
+      <div class="kb-item-title">⟶PODSTAWY⟵</div>
+
+      <div class="kb-links">
+        <div class="kb-link" onclick="loadContent(event, 'resp')">
+          Resp w ataku
+        </div>
+
+        <div class="kb-link" onclick="loadContent(event, 'treby')">
+          Treby
+        </div>
+      </div>
+    </div>
+
+    <!-- UNITY -->
+    <div class="kb-item" onclick="toggle(this)">
+      <div class="kb-item-title">Mapy</div>
+
+      <div class="kb-links">
+        <div class="kb-link" onclick="loadContent(event, 'mapy')">
+          placeholder
+        </div>
+      </div>
+    </div>
+
+    <!-- SYSTEM LOAD + SCROLL -->
+    <div class="kb-item" onclick="toggle(this)">
+      <div class="kb-item-title">Granie Unitami</div>
+
+      <div class="kb-links">
+
+        <div class="kb-link"
+             onclick="loadAndScroll(event, 'unity', 'sekcja1')">
+          placeholder
+        </div>
+
+        <div class="kb-link"
+             onclick="loadAndScroll(event, 'unity', 'sekcja2')">
+          placeholder
+        </div>
+
+        <div class="kb-link"
+             onclick="loadAndScroll(event, 'unity', 'sekcja3')">
+          placeholder
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="kb-content" id="kbContent">
+    <p>⟵ ⟵ ⟵ Wybierz temat z menu ⟵ ⟵ ⟵</p>
+    <p style="color:#1a1a1a ;">nie wierzcie poradnikom włączcie myślenie </p>
+  </div>
+
+</div>
+  <script src="navbar.js"></script>
+<script src="knowledgeBase.js"></script>
+<script>
+  renderNavbar("Bazowana wiedza");
+</script>
+</body>
+</html>
