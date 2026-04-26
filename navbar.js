@@ -7,7 +7,7 @@ function renderNavbar(pageName) {
 
     <div class="navbar">
       <a href="index">Podobno starting page</a>
-      <a href="knowledgeBase>Wiedza 40 pokoleń</a>
+      <a href="knowledgeBase">Wiedza 40 pokoleń</a>
       <a href="testc-optimized">Kartkóweczka</a>
     </div>
   `;
