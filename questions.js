@@ -39,7 +39,7 @@ const questions = [
 
     media: "https://cdn.jsdelivr.net/gh/Bokiczownik/resources_for_kr@main/knowledgeBase_res/kotsmiech.png",
 
-    question: "Która decyzja wygląda najlepiej?",
+    question: "Co bys zrobił w tej sytuacji?",
 
     tag: "Hero gameplay",
 
